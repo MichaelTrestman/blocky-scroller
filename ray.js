@@ -1,6 +1,6 @@
- //thanks to
-//http://jsfiddle.net/justin_c_rounds/Gd2S2/light/
-//for the great code!!
+
+//var explosionPoint = {x: 0, y: 0};
+
 
 rayArmed = true;
 canvas.addEventListener('click', function(evt) {
@@ -27,9 +27,10 @@ canvas.addEventListener('click', function(evt) {
     //ok, search all the damn objects to see if they intersect;
 
 
-    searchForHits(ray, platforms);
+    ray = searchForHits(ray, platforms);
     // ray = [ pC.x, pC.y, targetPoint.x, targetPoint.y ]
-    explosionPoint = targetPoint;
+    //explosionPoint = targetPoint;
+
     renderRayNext = true;
 
   }
@@ -38,8 +39,9 @@ canvas.addEventListener('click', function(evt) {
 
 
 var renderRay = function(ray){
-  
-  var exP = renderPoint(explosionPoint.x, explosionPoint.y)
+  var explosionPoint = {x: 0, y: 0};
+  var exP = renderPoint(ray[2], ray[3])
+
   explosionPoint.x = exP[0];
   explosionPoint.y = exP[1];
   
