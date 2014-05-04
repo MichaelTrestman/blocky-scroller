@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+      	text-align: center;
+        margin: 0px;
+        padding: 0px;
+      }
+      canvas {
+      	background-color: #101;
+        /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbLWDpatB3rv_KHFaVIQ0RdejPz6qoa8ubbcrLeBOTpmzWN0rB");	*/
+      }
+      #title {background-color: blue;
+        height: 15%;
+
+      }
+      #levelBars {
+        background-color: darkgreen;
+        float: left;
+        width: 9%;
+      }
+      #instructions {
+        background-color: darkorange;
+        float: right;
+        width: 9%;
+      }
+      #mousePos {
+
+        background-color: pink;
+        float: left;
+        width: 9%;
+      }
+
+
+    </style>
+    
+    
+  </head>
+
+  <body>
+  <div id="title"><h1> Space Laser Robot Battle 3000 </h1></div>
+  <div id="levelBars"> Shields: 100 <br> Jets: 100 <br> Laser power: 50 </div>
+  <div id="instructions"> Instructions: blahblabhalbhalbhalbhblahblahblahblah</div>
+  <div id="mousePos">Mouse Position!</div>
+  <div>
+    <canvas id='myCanvas' height="800" width="1600"></canvas>
+  </div>
+
+
+  <script type='text/javascript' src='globalVariables.js'></script>
+    
+    <script type='text/javascript' src='getMousePos.js'></script>
+    <script type='text/javascript' src='characters.js'></script>
+    <script type='text/javascript' src='platformList.js'></script>
+    <script type='text/javascript' src='pC.js'></script>
+    <script type='text/javascript' src='pcGo.js'></script>
+    <script type='text/javascript' src='render.js'></script>
+    
+    <script type='text/javascript' src='forces.js'></script>
+    
+    <script type='text/javascript' src='mousePointer.js'></script>
+    <script type='text/javascript' src='collision.js'></script>
+    <script type='text/javascript' src='colliderOldSchool.js'></script>
+    
+    <script type='text/javascript' src='main.js'></script>
+    <script type='text/javascript' src='nPcMoves.js'></script>
+    <script type='text/javascript' src='checkLineIntersection.js'></script>
+    <script type='text/javascript' src='ray.js'></script>
+
+    <script type='text/javascript' src='searchForHits.js'></script>
+
+  </body>
+</html>

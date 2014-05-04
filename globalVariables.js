@@ -1,0 +1,13 @@
+ var zoomFactor = .2;
+ var friction = true;
+ var gravity = false;
+ var Paused;
+ var characters = [];
+ var enemiesList = [];
+ var enemiesPool = [];
+ var platforms = [];
+ var platformsList;
+ var platformsPool;
+ var mousePointerArmed;
+ var renderRayNext;
+ var ray;

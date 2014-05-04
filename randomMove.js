@@ -1,0 +1,6 @@
+Character.prototype.randomMove = function(){
+
+
+
+
+}
