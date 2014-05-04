@@ -12,11 +12,11 @@ var searchForHits = function(ray, objects){
 			var fac = obj.faces[q];
 				
 			if (
-				checkLineIntersection(ray[0], ray[1], ray[2], ray[3], fac[0], fac[1], fac[2], fac[3]).onLine2
+				checkLineIntersection(ray[0], ray[1], ray[2], ray[3], fac[0], fac[1], fac[2], fac[3]).onLine2 && checkLineIntersection(ray[0], ray[1], ray[2], ray[3], fac[0], fac[1], fac[2], fac[3]).onLine1
 			  )
 			{
 			
-
+				alert('hit something!')
 				thingHit = obj;
 				faceHit = fac;
 
@@ -24,13 +24,12 @@ var searchForHits = function(ray, objects){
 				shlargetPoint.x = checkLineIntersection(ray[0], ray[1], ray[2], ray[3], fac[0], fac[1], fac[2], fac[3]).x;
 				shlargetPoint.y = checkLineIntersection(ray[0], ray[1], ray[2], ray[3], fac[0], fac[1], fac[2], fac[3]).y;
 				ray = [ pC.x, pC.y, shlargetPoint.x, shlargetPoint.y ]
-				//ray = [ pC.x, pC.y, 0, 0 ]
 			};
 		}
-		return ray;
+		
 	}
 
-
+	return ray;
 	// don't return anything, reset targetPoint!
 }
 
